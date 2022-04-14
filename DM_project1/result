@@ -1,0 +1,638 @@
+
+C4.5 [release 8] decision tree generator	Sun Dec 12 01:48:51 2021
+----------------------------------------
+
+    Options:
+	File stem <test>
+	Trees evaluated on unseen cases
+
+Read 1000 cases (67 attributes) from test.data
+
+Decision Tree:
+
+LOS <= 0.169014 :
+|   Rheumatoid Arthritis/collagen = 0:
+|   |   Metastatic Cancer = 1: 1 (2.0)
+|   |   Metastatic Cancer = 0:
+|   |   |   Deficiency Anemia = 1: 1 (6.0/1.0)
+|   |   |   Deficiency Anemia = 0:
+|   |   |   |   Drain = 0:
+|   |   |   |   |   Depression = 1: 0 (4.0)
+|   |   |   |   |   Depression = 0:
+|   |   |   |   |   |   Other Neurological Disorders = 1: 0 (3.0)
+|   |   |   |   |   |   Other Neurological Disorders = 0:
+|   |   |   |   |   |   |   Obesity = 1: 1 (4.0/1.0)
+|   |   |   |   |   |   |   Obesity = 0:
+|   |   |   |   |   |   |   |   Fluid and Electrolyte Disorders = 0:
+|   |   |   |   |   |   |   |   |   LOS <= 0.084507 :
+|   |   |   |   |   |   |   |   |   |   Heart disease = 2: 1 (1.0)
+|   |   |   |   |   |   |   |   |   |   Heart disease = 3: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   Heart disease = 0:
+|   |   |   |   |   |   |   |   |   |   |   Blood_trans = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   Diagnosis = 2: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Diagnosis = 3: 0 (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Diagnosis = 4: 1 (1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Diagnosis = 5: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Diagnosis = 0:[S1]
+|   |   |   |   |   |   |   |   |   |   |   |   Diagnosis = 1:
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 1: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 2: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 3: 1 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 4: 0 (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 5: 0 (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 7: 0 (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 8: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 9: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 10: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 6:
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ASA = 0: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ASA = 1: 1 (1.1/0.1)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ASA = 2: 0 (13.7/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ASA = 4: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ASA = 3:[S2]
+|   |   |   |   |   |   |   |   |   |   |   Blood_trans = 1:
+|   |   |   |   |   |   |   |   |   |   |   |   SEX = 1: 1 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SEX = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 1: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 2: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 3: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 4: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 5: 1 (1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 6: 0 (1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 7: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 8: 0 (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 9: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 10: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   Heart disease = 1:
+|   |   |   |   |   |   |   |   |   |   |   AGE = 1: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   AGE = 2: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   AGE = 3: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   AGE = 4: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   AGE = 5: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   AGE = 6: 1 (1.0)
+|   |   |   |   |   |   |   |   |   |   |   AGE = 7: 0 (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   AGE = 8: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   AGE = 9: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   AGE = 10: 0 (0.0)
+|   |   |   |   |   |   |   |   |   LOS > 0.084507 :
+|   |   |   |   |   |   |   |   |   |   CBC_MCV > 0.438298 : 1 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   CBC_MCV <= 0.438298 :[S3]
+|   |   |   |   |   |   |   |   Fluid and Electrolyte Disorders = 1:
+|   |   |   |   |   |   |   |   |   OP_time_minute <= 0.403141 : 0 (2.8/0.8)
+|   |   |   |   |   |   |   |   |   OP_time_minute > 0.403141 : 1 (4.2)
+|   |   |   |   Drain = 1:
+|   |   |   |   |   Alcohol Abuse = 1: 1 (5.0)
+|   |   |   |   |   Alcohol Abuse = 0:
+|   |   |   |   |   |   Depression = 0:
+|   |   |   |   |   |   |   Psychoses = 1: 0 (3.0)
+|   |   |   |   |   |   |   Psychoses = 0:
+|   |   |   |   |   |   |   |   Other Neurological Disorders = 1: 1 (6.0)
+|   |   |   |   |   |   |   |   Other Neurological Disorders = 0:
+|   |   |   |   |   |   |   |   |   SEX = 0:
+|   |   |   |   |   |   |   |   |   |   Hypothyroidism = 1: 1 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Hypothyroidism = 0:[S4]
+|   |   |   |   |   |   |   |   |   SEX = 1:
+|   |   |   |   |   |   |   |   |   |   Blood Loss Anemia = 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   Blood Loss Anemia = 0:
+|   |   |   |   |   |   |   |   |   |   |   CBC_RDW <= 0.25 :
+|   |   |   |   |   |   |   |   |   |   |   |   Valvular Disease = 1: 1 (3.5/0.6)
+|   |   |   |   |   |   |   |   |   |   |   |   Valvular Disease = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   |   Commercial_ALBC = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Diagnosis = 2: 1 (1.2)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Diagnosis = 3: 1 (7.5/1.2)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Diagnosis = 4: 1 (2.9/0.6)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Diagnosis = 5: 0 (1.6/0.2)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Diagnosis = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 1: 1 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 2: 1 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 3: 1 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 4: 1 (2.3)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 5: 1 (2.9/1.2)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 10: 1 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 6:[S5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 7:[S6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 8:[S7]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AGE = 9:[S8]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Diagnosis = 1:
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOS > 0.0704225 : 0 (10.4/2.3)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOS <= 0.0704225 :[S9]
+|   |   |   |   |   |   |   |   |   |   |   |   |   Commercial_ALBC = 1:
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOS <= 0.0422535 : 0 (2.7)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOS > 0.0422535 : 1 (3.5/1.2)
+|   |   |   |   |   |   |   |   |   |   |   CBC_RDW > 0.25 :[S10]
+|   |   |   |   |   |   Depression = 1:
+|   |   |   |   |   |   |   SEX = 0: 1 (12.0/1.0)
+|   |   |   |   |   |   |   SEX = 1: 0 (3.0/1.0)
+|   Rheumatoid Arthritis/collagen = 1:
+|   |   elx_index > 3 : 0 (7.0/1.0)
+|   |   elx_index <= 3 :
+|   |   |   elx_index > 1 : 1 (18.0)
+|   |   |   elx_index <= 1 :
+|   |   |   |   Drain = 0:
+|   |   |   |   |   AGE = 1: 0 (0.0)
+|   |   |   |   |   AGE = 2: 0 (0.0)
+|   |   |   |   |   AGE = 3: 0 (0.0)
+|   |   |   |   |   AGE = 4: 0 (0.0)
+|   |   |   |   |   AGE = 5: 0 (2.0)
+|   |   |   |   |   AGE = 6: 1 (1.0)
+|   |   |   |   |   AGE = 7: 0 (2.0/1.0)
+|   |   |   |   |   AGE = 8: 0 (0.0)
+|   |   |   |   |   AGE = 9: 0 (0.0)
+|   |   |   |   |   AGE = 10: 0 (0.0)
+|   |   |   |   Drain = 1:
+|   |   |   |   |   Joint = 1: 1 (8.0)
+|   |   |   |   |   Joint = 0:
+|   |   |   |   |   |   AGE = 1: 1 (0.0)
+|   |   |   |   |   |   AGE = 2: 0 (1.0)
+|   |   |   |   |   |   AGE = 3: 1 (0.0)
+|   |   |   |   |   |   AGE = 4: 1 (0.0)
+|   |   |   |   |   |   AGE = 5: 0 (1.0)
+|   |   |   |   |   |   AGE = 6: 1 (7.0/2.0)
+|   |   |   |   |   |   AGE = 7: 1 (4.0/1.0)
+|   |   |   |   |   |   AGE = 8: 0 (2.0/1.0)
+|   |   |   |   |   |   AGE = 9: 1 (0.0)
+|   |   |   |   |   |   AGE = 10: 1 (0.0)
+LOS > 0.169014 :
+|   CBC_HT > 0.208633 : 1 (31.5/2.2)
+|   CBC_HT <= 0.208633 :
+|   |   AGE = 1: 1 (0.0)
+|   |   AGE = 2: 0 (1.0/0.0)
+|   |   AGE = 3: 1 (0.6/0.0)
+|   |   AGE = 4: 1 (1.1/0.0)
+|   |   AGE = 5: 1 (2.0/0.0)
+|   |   AGE = 6: 1 (1.4/0.3)
+|   |   AGE = 7: 1 (2.0/0.0)
+|   |   AGE = 8: 1 (3.6/1.6)
+|   |   AGE = 9: 1 (0.9/0.0)
+|   |   AGE = 10: 1 (0.0)
+
+
+Subtree [S1]
+
+Peripheral Vascular Disorders = 1: 0 (2.0)
+Peripheral Vascular Disorders = 0:
+|   Na <= 0.325744 :
+|   |   CBC_WBC <= 0.606383 :
+|   |   |   SEX = 0: 1 (3.5/1.6)
+|   |   |   SEX = 1: 0 (2.8/0.9)
+|   |   CBC_WBC > 0.606383 :
+|   |   |   LOS <= 0.0422535 : 1 (4.7/1.0)
+|   |   |   LOS > 0.0422535 : 0 (2.5/1.1)
+|   Na > 0.325744 :
+|   |   K <= 0.401691 :
+|   |   |   AGE = 1: 1 (0.0)
+|   |   |   AGE = 2: 1 (0.0)
+|   |   |   AGE = 3: 1 (0.0)
+|   |   |   AGE = 4: 1 (0.0)
+|   |   |   AGE = 5: 1 (1.4/0.1)
+|   |   |   AGE = 6: 1 (3.2/1.4)
+|   |   |   AGE = 7: 0 (2.5/0.9)
+|   |   |   AGE = 9: 1 (0.6/0.1)
+|   |   |   AGE = 10: 1 (0.0)
+|   |   |   AGE = 8:
+|   |   |   |   Cemented = 0: 0 (2.0/0.4)
+|   |   |   |   Cemented = 1: 1 (2.9/1.0)
+|   |   K > 0.401691 :
+|   |   |   LOS <= 0.0140845 : 0 (12.2/0.7)
+|   |   |   LOS > 0.0140845 :
+|   |   |   |   AGE = 1: 0 (0.0)
+|   |   |   |   AGE = 2: 0 (0.0)
+|   |   |   |   AGE = 3: 0 (0.0)
+|   |   |   |   AGE = 4: 0 (0.0)
+|   |   |   |   AGE = 5: 1 (3.9/1.7)
+|   |   |   |   AGE = 9: 1 (3.7/0.7)
+|   |   |   |   AGE = 10: 0 (0.0)
+|   |   |   |   AGE = 6:
+|   |   |   |   |   SEX = 0: 0 (4.7/1.5)
+|   |   |   |   |   SEX = 1: 1 (2.9)
+|   |   |   |   AGE = 7:
+|   |   |   |   |   GPT > 0.3125 : 0 (14.7/2.8)
+|   |   |   |   |   GPT <= 0.3125 :
+|   |   |   |   |   |   Joint = 0: 1 (2.2/0.8)
+|   |   |   |   |   |   Joint = 1: 0 (2.4/0.9)
+|   |   |   |   AGE = 8:
+|   |   |   |   |   cci_index > 1 : 0 (3.2)
+|   |   |   |   |   cci_index <= 1 :
+|   |   |   |   |   |   Non_commercial_ALBC = 0: 0 (9.4/1.5)
+|   |   |   |   |   |   Non_commercial_ALBC = 1:
+|   |   |   |   |   |   |   elx_index > 0 : 1 (3.7/0.7)
+|   |   |   |   |   |   |   elx_index <= 0 :
+|   |   |   |   |   |   |   |   LOS > 0.056338 : 0 (3.5)
+|   |   |   |   |   |   |   |   LOS <= 0.056338 :
+|   |   |   |   |   |   |   |   |   OP_time_minute <= 0.366492 : 0 (2.7/0.7)
+|   |   |   |   |   |   |   |   |   OP_time_minute > 0.366492 : 1 (2.7/0.5)
+
+
+Subtree [S2]
+
+OP_time_minute <= 0.251309 : 0 (2.6)
+OP_time_minute > 0.251309 : 1 (2.6/0.6)
+
+
+Subtree [S3]
+
+Hypertension Uncomplicated = 1: 1 (2.0)
+Hypertension Uncomplicated = 0:
+|   Joint = 0: 0 (2.5)
+|   Joint = 1: 1 (2.5/0.5)
+
+
+Subtree [S4]
+
+Peptic Ulcer Disease excluding bleeding = 0:
+|   Diagnosis = 2: 1 (6.0/2.0)
+|   Diagnosis = 4: 0 (0.0)
+|   Diagnosis = 5: 1 (7.2/0.6)
+|   Diagnosis = 0:
+|   |   Blood Loss Anemia = 1: 0 (2.0)
+|   |   Blood Loss Anemia = 0:
+|   |   |   Cardiac Arrhythmia = 1: 0 (6.0/1.0)
+|   |   |   Cardiac Arrhythmia = 0:
+|   |   |   |   Obesity = 1: 0 (3.0)
+|   |   |   |   Obesity = 0:
+|   |   |   |   |   Heart disease = 2: 0 (1.0)
+|   |   |   |   |   Heart disease = 3: 0 (0.0)
+|   |   |   |   |   Heart disease = 0:
+|   |   |   |   |   |   Cemented = 0:
+|   |   |   |   |   |   |   Joint = 0: 0 (6.0)
+|   |   |   |   |   |   |   Joint = 1:
+|   |   |   |   |   |   |   |   Crea <= 0.282548 :
+|   |   |   |   |   |   |   |   |   Blood_trans = 0: 1 (3.6/1.0)
+|   |   |   |   |   |   |   |   |   Blood_trans = 1: 0 (2.0/0.6)
+|   |   |   |   |   |   |   |   Crea > 0.282548 :
+|   |   |   |   |   |   |   |   |   AGE = 1: 0 (0.0)
+|   |   |   |   |   |   |   |   |   AGE = 2: 0 (0.0)
+|   |   |   |   |   |   |   |   |   AGE = 3: 0 (0.0)
+|   |   |   |   |   |   |   |   |   AGE = 4: 0 (0.0)
+|   |   |   |   |   |   |   |   |   AGE = 5: 1 (1.7)
+|   |   |   |   |   |   |   |   |   AGE = 6: 0 (8.1/1.9)
+|   |   |   |   |   |   |   |   |   AGE = 7: 0 (10.3/1.7)
+|   |   |   |   |   |   |   |   |   AGE = 8: 0 (11.6/1.7)
+|   |   |   |   |   |   |   |   |   AGE = 9: 0 (1.7/0.9)
+|   |   |   |   |   |   |   |   |   AGE = 10: 0 (0.0)
+|   |   |   |   |   |   Cemented = 1:
+|   |   |   |   |   |   |   Joint = 1: 0 (2.0)
+|   |   |   |   |   |   |   Joint = 0:
+|   |   |   |   |   |   |   |   AGE = 1: 0 (0.0)
+|   |   |   |   |   |   |   |   AGE = 2: 0 (0.0)
+|   |   |   |   |   |   |   |   AGE = 3: 0 (0.0)
+|   |   |   |   |   |   |   |   AGE = 4: 0 (0.0)
+|   |   |   |   |   |   |   |   AGE = 10: 0 (0.0)
+|   |   |   |   |   |   |   |   AGE = 5:
+|   |   |   |   |   |   |   |   |   Hypertension Uncomplicated = 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   Hypertension Uncomplicated = 1: 1 (2.0)
+|   |   |   |   |   |   |   |   AGE = 6:
+|   |   |   |   |   |   |   |   |   Non_commercial_ALBC = 0: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   Non_commercial_ALBC = 1:
+|   |   |   |   |   |   |   |   |   |   Crea <= 0.160665 : 1 (8.0/2.8)
+|   |   |   |   |   |   |   |   |   |   Crea > 0.160665 :
+|   |   |   |   |   |   |   |   |   |   |   Blood_trans = 1: 0 (2.5/0.8)
+|   |   |   |   |   |   |   |   |   |   |   Blood_trans = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   LOS > 0.084507 : 1 (2.2)
+|   |   |   |   |   |   |   |   |   |   |   |   LOS <= 0.084507 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   elx_index > 0 : 1 (3.8/1.5)
+|   |   |   |   |   |   |   |   |   |   |   |   |   elx_index <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CBC_HT > 0.586331 : 0 (9.5/1.8)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CBC_HT <= 0.586331 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOS <= 0.056338 : 1 (2.9/0.9)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   LOS > 0.056338 : 0 (3.0/0.6)
+|   |   |   |   |   |   |   |   AGE = 7:
+|   |   |   |   |   |   |   |   |   Renal Failure = 1: 1 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Renal Failure = 0:
+|   |   |   |   |   |   |   |   |   |   ASA = 0: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   ASA = 1: 0 (1.7/0.3)
+|   |   |   |   |   |   |   |   |   |   ASA = 4: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   ASA = 2:
+|   |   |   |   |   |   |   |   |   |   |   Blood_trans = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   Liver Disease = 1: 0 (2.6)
+|   |   |   |   |   |   |   |   |   |   |   |   Liver Disease = 0:
+|   |   |   |   |   |   |   |   |   |   |   |   |   elx_index > 1 : 0 (3.8)
+|   |   |   |   |   |   |   |   |   |   |   |   |   elx_index <= 1 :[S11]
+|   |   |   |   |   |   |   |   |   |   |   Blood_trans = 1:
+|   |   |   |   |   |   |   |   |   |   |   |   LOS <= 0.0704225 : 1 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   LOS > 0.0704225 : 0 (7.1/3.0)
+|   |   |   |   |   |   |   |   |   |   ASA = 3:
+|   |   |   |   |   |   |   |   |   |   |   GPT <= 0.25 :[S12]
+|   |   |   |   |   |   |   |   |   |   |   GPT > 0.25 :
+|   |   |   |   |   |   |   |   |   |   |   |   CBC_MCV <= 0.455319 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   CBC_HG > 0.510638 : 1 (7.1/1.8)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CBC_HG <= 0.510638 :[S13]
+|   |   |   |   |   |   |   |   |   |   |   |   CBC_MCV > 0.455319 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   K > 0.556025 : 0 (9.0/3.7)
+|   |   |   |   |   |   |   |   |   |   |   |   |   K <= 0.556025 :[S14]
+|   |   |   |   |   |   |   |   AGE = 8:
+|   |   |   |   |   |   |   |   |   Renal Failure = 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   Renal Failure = 0:
+|   |   |   |   |   |   |   |   |   |   Blood_trans = 1: 0 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   Blood_trans = 0:
+|   |   |   |   |   |   |   |   |   |   |   elx_index <= 0 :
+|   |   |   |   |   |   |   |   |   |   |   |   CBC_MCHC <= 0.333333 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   CBC_WBC <= 0.319149 : 1 (8.6/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CBC_WBC > 0.319149 : 0 (12.9/3.9)
+|   |   |   |   |   |   |   |   |   |   |   |   CBC_MCHC > 0.333333 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   Crea <= 0.254848 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Na > 0.446585 : 0 (9.3/3.4)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Na <= 0.446585 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Crea <= 0.155125 : 0 (6.0/1.9)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Crea > 0.155125 : 1 (4.5/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Crea > 0.254848 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOS <= 0.0422535 : 1 (3.3/1.4)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   LOS > 0.0422535 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ASA = 0: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ASA = 1: 1 (0.7/0.3)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ASA = 2: 0 (5.2/0.7)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ASA = 3: 0 (9.6/0.8)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ASA = 4: 0 (0.0)
+|   |   |   |   |   |   |   |   |   |   |   elx_index > 0 :
+|   |   |   |   |   |   |   |   |   |   |   |   elx_index > 2 : 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   elx_index <= 2 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   Crea <= 0.177285 :[S15]
+|   |   |   |   |   |   |   |   |   |   |   |   |   Crea > 0.177285 :
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   elx_index <= 1 :[S16]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   elx_index > 1 :[S17]
+|   |   |   |   |   |   |   |   AGE = 9:
+|   |   |   |   |   |   |   |   |   Commercial_ALBC = 0: 1 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   Commercial_ALBC = 1: 0 (3.0/1.0)
+|   |   |   |   |   Heart disease = 1:
+|   |   |   |   |   |   CBC_HG <= 0.425532 : 1 (5.0/1.0)
+|   |   |   |   |   |   CBC_HG > 0.425532 :
+|   |   |   |   |   |   |   LOS <= 0.056338 : 0 (2.5/0.5)
+|   |   |   |   |   |   |   LOS > 0.056338 : 1 (2.5/1.0)
+|   Diagnosis = 1:
+|   |   cci_index <= 1 : 0 (8.0)
+|   |   cci_index > 1 : 1 (4.0)
+|   Diagnosis = 3:
+|   |   Joint = 1: 0 (4.0)
+|   |   Joint = 0:
+|   |   |   Blood_trans = 0: 1 (5.0/2.0)
+|   |   |   Blood_trans = 1: 0 (3.0/1.0)
+Peptic Ulcer Disease excluding bleeding = 1:
+|   Crea > 0.243767 : 1 (7.5/1.5)
+|   Crea <= 0.243767 :
+|   |   AGE = 1: 1 (0.0)
+|   |   AGE = 2: 1 (0.0)
+|   |   AGE = 3: 1 (0.0)
+|   |   AGE = 4: 1 (0.0)
+|   |   AGE = 5: 1 (0.0)
+|   |   AGE = 6: 1 (1.0)
+|   |   AGE = 7: 0 (3.0/1.0)
+|   |   AGE = 8: 1 (2.5/0.5)
+|   |   AGE = 9: 0 (1.0)
+|   |   AGE = 10: 1 (0.0)
+
+
+Subtree [S5]
+
+CBC_MCV <= 0.438298 : 1 (5.2/0.3)
+CBC_MCV > 0.438298 :
+|   LOS <= 0.056338 : 0 (2.9/0.9)
+|   LOS > 0.056338 : 1 (2.3/0.3)
+
+
+Subtree [S6]
+
+Chronic Pulmonary Disease = 1: 0 (2.7/0.6)
+Chronic Pulmonary Disease = 0:
+|   LOS <= 0.056338 : 1 (18.0/4.1)
+|   LOS > 0.056338 :
+|   |   Diabetes = 1: 1 (2.7/1.2)
+|   |   Diabetes = 0:
+|   |   |   OP_time_minute > 0.591623 : 0 (7.0/1.2)
+|   |   |   OP_time_minute <= 0.591623 :
+|   |   |   |   elx_index <= 0 : 1 (3.9/1.8)
+|   |   |   |   elx_index > 0 : 0 (2.9/0.9)
+
+
+Subtree [S7]
+
+Diabetes = 1: 0 (7.5/3.5)
+Diabetes = 0:
+|   Cemented = 0: 1 (2.3)
+|   Cemented = 1:
+|   |   BUN <= 0.551264 : 1 (7.1/1.6)
+|   |   BUN > 0.551264 :
+|   |   |   elx_index > 0 : 1 (2.5/0.3)
+|   |   |   elx_index <= 0 :
+|   |   |   |   OP_time_minute <= 0.387435 : 0 (2.9/0.9)
+|   |   |   |   OP_time_minute > 0.387435 : 1 (2.9/1.1)
+
+
+Subtree [S8]
+
+elx_index <= 1 : 0 (4.6/1.2)
+elx_index > 1 : 1 (2.3/0.6)
+
+
+Subtree [S9]
+
+cci_index > 0 : 1 (4.1)
+cci_index <= 0 :
+|   OP_time_minute <= 0.455497 : 1 (7.8/2.2)
+|   OP_time_minute > 0.455497 : 0 (3.6/0.7)
+
+
+Subtree [S10]
+
+Congestive Heart Failure = 1: 1 (3.5/0.4)
+Congestive Heart Failure = 0:
+|   Commercial_ALBC = 1: 0 (3.8/1.7)
+|   Commercial_ALBC = 0:
+|   |   Diagnosis = 2: 1 (0.8)
+|   |   Diagnosis = 3: 1 (6.5/0.8)
+|   |   Diagnosis = 4: 1 (2.1/0.4)
+|   |   Diagnosis = 5: 0 (1.1/0.1)
+|   |   Diagnosis = 0:
+|   |   |   CBC_RDW <= 0.291667 :
+|   |   |   |   Hypertension Uncomplicated = 0:
+|   |   |   |   |   AGE = 1: 1 (0.0)
+|   |   |   |   |   AGE = 2: 1 (0.0)
+|   |   |   |   |   AGE = 3: 1 (0.0)
+|   |   |   |   |   AGE = 4: 1 (0.8)
+|   |   |   |   |   AGE = 5: 1 (1.0/0.4)
+|   |   |   |   |   AGE = 6: 1 (1.5)
+|   |   |   |   |   AGE = 7: 1 (8.1/1.9)
+|   |   |   |   |   AGE = 8: 1 (7.0/1.3)
+|   |   |   |   |   AGE = 9: 0 (1.7/0.6)
+|   |   |   |   |   AGE = 10: 1 (0.0)
+|   |   |   |   Hypertension Uncomplicated = 1:
+|   |   |   |   |   Diabetes = 0: 1 (6.2/2.1)
+|   |   |   |   |   Diabetes = 1: 0 (4.2/1.9)
+|   |   |   CBC_RDW > 0.291667 :
+|   |   |   |   AGE = 1: 1 (0.0)
+|   |   |   |   AGE = 2: 1 (0.0)
+|   |   |   |   AGE = 3: 1 (0.0)
+|   |   |   |   AGE = 4: 1 (0.8)
+|   |   |   |   AGE = 5: 1 (1.0/0.4)
+|   |   |   |   AGE = 6: 1 (2.3/0.2)
+|   |   |   |   AGE = 9: 0 (3.5/1.0)
+|   |   |   |   AGE = 10: 1 (0.0)
+|   |   |   |   AGE = 7:
+|   |   |   |   |   Hypertension Uncomplicated = 0: 1 (8.1/1.9)
+|   |   |   |   |   Hypertension Uncomplicated = 1: 0 (4.0/1.9)
+|   |   |   |   AGE = 8:
+|   |   |   |   |   Hypertension Uncomplicated = 0: 1 (6.0/2.3)
+|   |   |   |   |   Hypertension Uncomplicated = 1:
+|   |   |   |   |   |   cci_index <= 2 : 1 (2.7/1.0)
+|   |   |   |   |   |   cci_index > 2 : 0 (2.0/0.4)
+|   |   Diagnosis = 1:
+|   |   |   CBC_WBC <= 0.5 : 1 (8.3/2.4)
+|   |   |   CBC_WBC > 0.5 :
+|   |   |   |   elx_index > 0 : 1 (2.2/0.4)
+|   |   |   |   elx_index <= 0 :
+|   |   |   |   |   AGE = 1: 1 (0.0)
+|   |   |   |   |   AGE = 2: 1 (0.0)
+|   |   |   |   |   AGE = 3: 1 (0.2)
+|   |   |   |   |   AGE = 4: 1 (1.3/0.6)
+|   |   |   |   |   AGE = 5: 1 (2.0/0.7)
+|   |   |   |   |   AGE = 6: 0 (2.0/0.9)
+|   |   |   |   |   AGE = 7: 1 (0.0)
+|   |   |   |   |   AGE = 8: 1 (1.6/0.6)
+|   |   |   |   |   AGE = 9: 1 (0.0)
+|   |   |   |   |   AGE = 10: 1 (0.0)
+
+
+Subtree [S11]
+
+Chronic Pulmonary Disease = 1: 0 (3.8/0.6)
+Chronic Pulmonary Disease = 0:
+|   cci_index > 0 : 1 (3.2/1.0)
+|   cci_index <= 0 :
+|   |   elx_index <= 0 :
+|   |   |   LOS <= 0.028169 : 0 (5.6)
+|   |   |   LOS > 0.028169 :
+|   |   |   |   Commercial_ALBC = 1: 1 (2.6/1.0)
+|   |   |   |   Commercial_ALBC = 0:
+|   |   |   |   |   Na > 0.588441 : 0 (16.6/5.5)
+|   |   |   |   |   Na <= 0.588441 :
+|   |   |   |   |   |   CBC_MCHC <= 0.431373 : 0 (9.0/3.1)
+|   |   |   |   |   |   CBC_MCHC > 0.431373 :
+|   |   |   |   |   |   |   OP_time_minute > 0.418848 : 0 (4.1/1.9)
+|   |   |   |   |   |   |   OP_time_minute <= 0.418848 :
+|   |   |   |   |   |   |   |   LOS <= 0.056338 : 0 (2.5/0.9)
+|   |   |   |   |   |   |   |   LOS > 0.056338 : 1 (2.1/1.0)
+|   |   elx_index > 0 :
+|   |   |   OP_time_minute > 0.518325 : 0 (3.4/1.0)
+|   |   |   OP_time_minute <= 0.518325 :
+|   |   |   |   LOS <= 0.056338 : 0 (3.1/1.4)
+|   |   |   |   LOS > 0.056338 : 1 (2.1)
+
+
+Subtree [S12]
+
+Chronic Pulmonary Disease = 1: 0 (2.1/0.5)
+Chronic Pulmonary Disease = 0:
+|   GOT <= 0.342105 : 0 (9.4/3.4)
+|   GOT > 0.342105 :
+|   |   Hypertension Uncomplicated = 0: 1 (3.3/1.6)
+|   |   Hypertension Uncomplicated = 1: 0 (2.8/0.9)
+
+
+Subtree [S13]
+
+Hypertension Uncomplicated = 0: 1 (3.9/1.5)
+Hypertension Uncomplicated = 1: 0 (2.0/0.9)
+
+
+Subtree [S14]
+
+Hypertension Uncomplicated = 0: 1 (6.8/2.7)
+Hypertension Uncomplicated = 1: 0 (3.4/1.5)
+
+
+Subtree [S15]
+
+Hypertension Uncomplicated = 0: 1 (2.0)
+Hypertension Uncomplicated = 1:
+|   cci_index <= 0 : 0 (7.0/2.5)
+|   cci_index > 0 :
+|   |   OP_time_minute <= 0.502618 : 0 (3.2/0.7)
+|   |   OP_time_minute > 0.502618 : 1 (3.8/0.5)
+
+
+Subtree [S16]
+
+cci_index > 0 : 1 (2.5)
+cci_index <= 0 :
+|   OP_time_minute <= 0.445026 : 1 (3.0/0.8)
+|   OP_time_minute > 0.445026 : 0 (3.0/1.2)
+
+
+Subtree [S17]
+
+OP_time_minute <= 0.513089 : 0 (3.8/0.8)
+OP_time_minute > 0.513089 : 1 (3.8/1.0)
+
+
+Simplified Decision Tree:
+
+LOS > 0.169014 : 1 (44.1/7.2)
+LOS <= 0.169014 :
+|   Rheumatoid Arthritis/collagen = 0:
+|   |   Drain = 0:
+|   |   |   Obesity = 1: 1 (4.0/2.2)
+|   |   |   Obesity = 0:
+|   |   |   |   Fluid and Electrolyte Disorders = 0:
+|   |   |   |   |   LOS > 0.084507 : 1 (14.0/5.8)
+|   |   |   |   |   LOS <= 0.084507 :
+|   |   |   |   |   |   Blood_trans = 0: 0 (180.0/58.9)
+|   |   |   |   |   |   Blood_trans = 1: 1 (10.0/5.6)
+|   |   |   |   Fluid and Electrolyte Disorders = 1:
+|   |   |   |   |   OP_time_minute <= 0.403141 : 0 (4.3/2.1)
+|   |   |   |   |   OP_time_minute > 0.403141 : 1 (5.7/1.8)
+|   |   Drain = 1:
+|   |   |   Depression = 0:
+|   |   |   |   Psychoses = 1: 0 (3.0/1.1)
+|   |   |   |   Psychoses = 0:
+|   |   |   |   |   Other Neurological Disorders = 1: 1 (6.0/1.2)
+|   |   |   |   |   Other Neurological Disorders = 0:
+|   |   |   |   |   |   SEX = 0:
+|   |   |   |   |   |   |   Peptic Ulcer Disease excluding bleeding = 1: 1 (16.0/6.9)
+|   |   |   |   |   |   |   Peptic Ulcer Disease excluding bleeding = 0:
+|   |   |   |   |   |   |   |   Diagnosis = 0: 0 (366.0/151.0)
+|   |   |   |   |   |   |   |   Diagnosis = 2: 1 (6.0/3.3)
+|   |   |   |   |   |   |   |   Diagnosis = 3: 0 (12.0/5.7)
+|   |   |   |   |   |   |   |   Diagnosis = 4: 0 (0.0)
+|   |   |   |   |   |   |   |   Diagnosis = 5: 1 (7.2/1.9)
+|   |   |   |   |   |   |   |   Diagnosis = 1:
+|   |   |   |   |   |   |   |   |   cci_index <= 1 : 0 (9.0/1.3)
+|   |   |   |   |   |   |   |   |   cci_index > 1 : 1 (4.0/1.2)
+|   |   |   |   |   |   SEX = 1:
+|   |   |   |   |   |   |   Blood Loss Anemia = 1: 0 (2.0/1.0)
+|   |   |   |   |   |   |   Blood Loss Anemia = 0:
+|   |   |   |   |   |   |   |   Commercial_ALBC = 0: 1 (227.7/85.9)
+|   |   |   |   |   |   |   |   Commercial_ALBC = 1:
+|   |   |   |   |   |   |   |   |   LOS <= 0.0422535 : 0 (4.0/1.2)
+|   |   |   |   |   |   |   |   |   LOS > 0.0422535 : 1 (7.0/3.4)
+|   |   |   Depression = 1:
+|   |   |   |   SEX = 0: 1 (12.0/2.5)
+|   |   |   |   SEX = 1: 0 (3.0/2.1)
+|   Rheumatoid Arthritis/collagen = 1:
+|   |   elx_index <= 3 : 1 (46.0/11.5)
+|   |   elx_index > 3 : 0 (7.0/2.4)
+
+
+Tree saved
+
+
+Evaluation on training data (1000 items):
+
+	 Before Pruning           After Pruning
+	----------------   ---------------------------
+	Size      Errors   Size      Errors   Estimate
+
+	 484  176(17.6%)     45  319(31.9%)    (36.7%)   <<
+
+Evaluation on test data (51159 items):
+
+	 Before Pruning           After Pruning
+	----------------   ---------------------------
+	Size      Errors   Size      Errors   Estimate
+
+	 484  21574(42.2%)     45  16133(31.5%)    (36.7%)   <<
+
+
+	  (a)  (b)	<-classified as
+	 ---- ----
+	3483215948	(a): class 0
+	  185  194	(b): class 1
+

@@ -1,0 +1,69 @@
+0, 1. | classes: non-infected, infected
+
+AGE: 1,2,3,4,5,6,7,8,9,10.
+SEX: 0, 1.
+LOS: continuous.
+Joint: 0, 1.
+Drain: 0, 1.
+Cemented: 0, 1.
+Commercial_ALBC: 0, 1.
+Non_commercial_ALBC: 0, 1.
+cci_index: continuous.
+elx_index: continuous.
+Blood_trans: 0, 1.
+OP_time_minute: continuous.
+OP_time_hour: ignore.
+ASA: 0,1, 2, 3, 4.
+CBC_WBC: continuous.
+CBC_RBC: continuous.
+CBC_HG: continuous.
+CBC_HT: continuous.
+CBC_MCV: continuous.
+CBC_MCH: continuous.
+CBC_MCHC: continuous.
+CBC_RDW: continuous.
+CBC_Platelet: continuous.
+CBC_RDWCV: ignore.
+BUN: continuous.
+Crea: continuous.
+GOT: continuous.
+GPT: continuous.
+ALB: ignore.
+Na: continuous.
+K: continuous.
+UA: ignore.
+Diagnosis: 0, 1, 2, 3, 4, 5.
+Congestive Heart Failure: 0, 1.
+Cardiac Arrhythmia: 0, 1.
+Valvular Disease: 0, 1.
+Heart disease: 0, 1, 2, 3.
+Pulmonary Circulation Disorders: 0, 1.
+Peripheral Vascular Disorders: 0, 1.
+Hypertension Uncomplicated: 0, 1.
+Paralysis: 0, 1.
+Other Neurological Disorders: 0, 1.
+Chronic Pulmonary Disease: 0, 1.
+Lung disease: 0, 1, 2.
+Diabetes: 0, 1.
+Hypothyroidism: 0, 1.
+Renal Failure: 0, 1.
+Liver Disease: 0, 1.
+Peptic Ulcer Disease excluding bleeding: 0, 1.
+AIDS/HIV: 0, 1.
+Lymphoma: 0, 1.
+Metastatic Cancer: 0, 1.
+Solid Tumor without Metastasis: 0, 1.
+Cancer history: 0, 1, 2, 3.
+Rheumatoid Arthritis/collagen: 0, 1.
+Coagulopathy: 0, 1.
+Obesity: 0, 1.
+Weight Loss: 0, 1.
+Fluid and Electrolyte Disorders: 0, 1.
+Blood Loss Anemia: 0, 1.
+Deficiency Anemia: 0, 1.
+Anemia: 0, 1, 2.
+Alcohol Abuse: 0, 1.
+Drug Abuse: 0, 1.
+Psychoses: 0, 1.
+Depression: 0, 1.
+Psyciatric disorder: 0, 1, 2.
